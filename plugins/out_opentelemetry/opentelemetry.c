@@ -1113,7 +1113,7 @@ static int append_v1_logs_message(struct opentelemetry_context *ctx,
 
     /* SeverityNumber */
     if (ctx->ra_severity_number_message) {
-        ra_val = flb_ra_get_value_object(ctx->ra_severity_number_metadata, *event->body);
+        ra_val = flb_ra_get_value_object(ctx->ra_severity_number_message, *event->body);
         if (ra_val != NULL && ra_val->o.type == MSGPACK_OBJECT_POSITIVE_INTEGER &&
             is_valid_severity_number(ra_val->o.via.u64) == FLB_TRUE) {
             log_record->severity_number = ra_val->o.via.u64;
