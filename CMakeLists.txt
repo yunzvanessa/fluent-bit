@@ -123,8 +123,8 @@ option(FLB_REGEX               "Build with Regex support"     Yes)
 option(FLB_UTF8_ENCODER        "Build with UTF8 encoding support" Yes)
 option(FLB_PARSER              "Build with Parser support"    Yes)
 option(FLB_TLS                 "Build with SSL/TLS support"   Yes)
-option(FLB_BINARY              "Build executable binary"      Yes)
-option(FLB_EXAMPLES            "Build examples"               Yes)
+option(FLB_BINARY              "Build executable binary"      No)
+option(FLB_EXAMPLES            "Build examples"               No)
 option(FLB_SHARED_LIB          "Build shared library"         Yes)
 option(FLB_VALGRIND            "Enable Valgrind support"       No)
 option(FLB_TRACE               "Enable trace mode"             No)
@@ -150,23 +150,23 @@ option(FLB_CORO_STACK_SIZE     "Set coroutine stack size")
 option(FLB_AVRO_ENCODER        "Build with Avro encoding support"            No)
 option(FLB_AWS_ERROR_REPORTER  "Build with aws error reporting support"      No)
 option(FLB_ARROW               "Build with Apache Arrow support"             No)
-option(FLB_WINDOWS_DEFAULTS    "Build with predefined Windows settings"     Yes)
-option(FLB_WASM                "Build with WASM runtime support"            Yes)
+option(FLB_WINDOWS_DEFAULTS    "Build with predefined Windows settings"     No)
+option(FLB_WASM                "Build with WASM runtime support"            No)
 option(FLB_WAMRC               "Build with WASM AOT compiler executable"    No)
 option(FLB_WASM_STACK_PROTECT  "Build with WASM runtime with strong stack protector flags" No)
 option(FLB_ENFORCE_ALIGNMENT   "Enable limited platform specific aligned memory access" No)
 
 # Native Metrics Support (cmetrics)
-option(FLB_METRICS             "Enable metrics support"       Yes)
+option(FLB_METRICS             "Enable metrics support"       No)
 
 # Native Profiules Support (cprofiles)
-option(FLB_PROFILES            "Enable profiles support"      Yes)
+option(FLB_PROFILES            "Enable profiles support"      No)
 
 # Proxy Plugins
-option(FLB_PROXY_GO            "Enable Go plugins support"    Yes)
+option(FLB_PROXY_GO            "Enable Go plugins support"    No)
 
 # Built-in Custom Plugins
-option(FLB_CUSTOM_CALYPTIA     "Enable Calyptia Support"      Yes)
+option(FLB_CUSTOM_CALYPTIA     "Enable Calyptia Support"      No)
 
 # Config formats
 option(FLB_CONFIG_YAML         "Enable YAML config format"    Yes)
